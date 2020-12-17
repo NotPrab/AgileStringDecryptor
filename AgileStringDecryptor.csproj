@@ -2,11 +2,19 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <Nullable>annotations</Nullable>
+        <PackageVersion>1.1.0</PackageVersion>
+        <Title>AgileStringDecryptor</Title>
+        <TargetFramework>net48</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="dnlib" Version="3.3.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Logger.cs" />
     </ItemGroup>
 
 </Project>
